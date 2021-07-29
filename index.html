@@ -16,46 +16,48 @@
 <body>
     <!-- Homework from the module 4.2 Frontend Developer -->
     <section class="currency-exchange">
-        <header class="currency-exchange__header">
-            <h1 class="currency-exchange__title">Kantor wymiany walut</h1>
-            <p class="currency-exchange__description">
-                Szybka wymiana bez zbędnego czekania
-            </p>
-        </header>
-        <form class="currency-exchange__form">
-            <div class="currency-exchange__first-line">
-                <button class="currency-exchange__reset">
-                    <img src="images/icons/cross.png" class="currency-exchange__cross" alt="Zresetuj">
-                </button>
-                <p class="currency-exchange__caption">Wymień</p>
-                <a href="#" class="currency-exchange__link">
-                    <img src="images/icons/stats.png" class="currency-exchange__stats" alt="Kursy walut">
-                </a>
-            </div>
-            <div class="currency-exchange__second-line">
-                <select class="currency-exchange__currencies">
-                    <option value="PLN">PLN</option>
-                    <option value="EUR">EUR</option>
-                    <option value="USD">USD</option>
-                </select>
-                <input type="number" class="currency-exchange__value" min="0">
-            </div>
-            <div class="currency-exchange__third-line">
-                <button class="currency-exchange__swap">
-                    <img src="images/icons/exchange.png" class="currency-exchange__exchange" alt="Zamiana">
-                </button>
-                <p class="currency-exchange__current-rate"></p>
-            </div>
-            <div class="currency-exchange__fourth-line">
-                <select class="currency-exchange__currencies">
-                    <option value="EUR">EUR</option>
-                    <option value="PLN">PLN</option>
-                    <option value="USD">USD</option>
-                </select>
-                <input type="number" class="currency-exchange__value" readonly>
-            </div>
-            <button type="submit" class="currency-exchange__submit">Wymień</button>
-        </form>
+        <div class="currency-exchange__box">
+            <header class="currency-exchange__header">
+                <h1 class="currency-exchange__title">Kantor wymiany walut</h1>
+                <p class="currency-exchange__description">
+                    Szybka wymiana bez zbędnego czekania
+                </p>
+            </header>
+            <form class="currency-exchange__form">
+                <div class="currency-exchange__first-line">
+                    <button class="currency-exchange__reset">
+                        <img src="images/icons/cross.png" class="currency-exchange__cross" alt="Zresetuj">
+                    </button>
+                    <p class="currency-exchange__caption">Wymień</p>
+                    <a href="#" class="currency-exchange__link">
+                        <img src="images/icons/stats.png" class="currency-exchange__stats" alt="Kursy walut">
+                    </a>
+                </div>
+                <div class="currency-exchange__second-line">
+                    <select class="currency-exchange__currencies">
+                        <option value="PLN">PLN</option>
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                    </select>
+                    <input type="number" class="currency-exchange__value" min="0">
+                </div>
+                <div class="currency-exchange__third-line">
+                    <button class="currency-exchange__swap">
+                        <img src="images/icons/exchange.png" class="currency-exchange__exchange" alt="Zamiana">
+                    </button>
+                    <p class="currency-exchange__current-rate"></p>
+                </div>
+                <div class="currency-exchange__fourth-line">
+                    <select class="currency-exchange__currencies">
+                        <option value="EUR">EUR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="USD">USD</option>
+                    </select>
+                    <input type="number" class="currency-exchange__value" readonly>
+                </div>
+                <button type="submit" class="currency-exchange__submit">Wymień</button>
+            </form>
+        </div>
     </section>
 </body>
 
