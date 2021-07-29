@@ -3,3 +3,12 @@
     align-items: center;
     flex-direction: column;
 }
+.currency-exchange__box {
+    max-width: 500px;
+    padding: 30px 50px;
+    border: 5px solid rgb(50, 200, 50);
+    border-radius: 35px;
+    text-align: center;
+    background: rgb(110, 220, 120);
+    margin: 5vh 0;
+}
