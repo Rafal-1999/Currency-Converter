@@ -10,8 +10,3 @@
     background: rgb(110, 220, 120);
     margin: 0 auto;
 }
-.currency-exchange__line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
