@@ -14,3 +14,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+.currency-exchange__position--colspan {
+    grid-column: 2 / 4;
+}
