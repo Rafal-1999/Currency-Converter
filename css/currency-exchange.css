@@ -10,3 +10,7 @@
     background: rgb(110, 220, 120);
     margin: 0 auto;
 }
+.currency-exchange__line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
