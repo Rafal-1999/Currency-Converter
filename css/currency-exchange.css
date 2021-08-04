@@ -19,6 +19,9 @@
     align-items: flex-end;
     justify-content: flex-start;
 }
+.currency-exchange__position--center-align {
+    justify-content: center;
+}
 .currency-exchange__position--colspan {
     grid-column: 2 / 4;
 }
