@@ -17,6 +17,7 @@
 .currency-exchange__position {
     display: flex;
     align-items: flex-end;
+    justify-content: flex-start;
 }
 .currency-exchange__position--colspan {
     grid-column: 2 / 4;
