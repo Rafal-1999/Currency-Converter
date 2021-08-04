@@ -22,6 +22,9 @@
 .currency-exchange__position--center-align {
     justify-content: center;
 }
+.currency-exchange__position--right-align {
+    justify-content: flex-end;
+}
 .currency-exchange__position--colspan {
     grid-column: 2 / 4;
 }
