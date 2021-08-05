@@ -10,6 +10,9 @@
     background: rgb(110, 220, 120);
     margin: 0 auto;
 }
+.currency-exchange__description {
+    font-size: 20px;
+}
 .currency-exchange__user-interface {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
