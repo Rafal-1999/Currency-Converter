@@ -10,6 +10,9 @@
     background: rgb(110, 220, 120);
     margin: 0 auto;
 }
+.currency-exchange__title {
+    font-size: 35px;
+}
 .currency-exchange__description {
     font-size: 20px;
 }
@@ -30,4 +33,9 @@
 }
 .currency-exchange__position--colspan {
     grid-column: 2 / 4;
+}
+.currency-exchange__button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
