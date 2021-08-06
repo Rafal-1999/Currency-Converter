@@ -45,10 +45,15 @@
     background: none;
     border: none;
     padding: 0;
+    margin: 0;
+    font-size: 0;
     cursor: pointer;
 }
 .currency-exchange__caption {
     font-size: 18px;
     margin: 0;
     text-transform: uppercase;
+}
+.currency-exchange__link {
+    font-size: 0;
 }
