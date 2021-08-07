@@ -50,10 +50,18 @@
     cursor: pointer;
 }
 .currency-exchange__caption {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     text-transform: uppercase;
 }
 .currency-exchange__link {
     font-size: 0;
+}
+.currency-exchange__currencies {
+    max-width: 70%;
+    font-size: 25px;
+    padding: 10px 15px;
+    padding-left: 0;
+    background: none;
+    border: none;
 }
