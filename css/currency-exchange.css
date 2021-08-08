@@ -65,3 +65,11 @@
     background: none;
     border: none;
 }
+.currency-exchange__value {
+    max-width: 80%;
+    font-size: 25px;
+    padding: 10px 15px;
+    text-align: right;
+    background: none;
+    border: none;
+}
