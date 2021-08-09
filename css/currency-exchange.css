@@ -24,8 +24,10 @@
     margin: 0;
 }
 .currency-exchange__user-interface {
+    height: 214px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
 }
 .currency-exchange__position {
     display: flex;
