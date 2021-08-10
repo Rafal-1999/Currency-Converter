@@ -40,7 +40,7 @@
                         </a>
                     </div>
                     <div class="currency-exchange__position">
-                        <select class="currency-exchange__currencies">
+                        <select class="currency-exchange__currencies js-firstCurrency">
                             <option value="PLN">PLN</option>
                             <option value="EUR">EUR</option>
                             <option value="USD">USD</option>
@@ -48,21 +48,21 @@
                     </div>
                     <div class="currency-exchange__position currency-exchange__position--right-align
                     currency-exchange__position--colspan">
-                        <input type="number" class="currency-exchange__value" min="0">
+                        <input type="number" class="currency-exchange__value js-value" min="0">
                     </div>
                     <div class="currency-exchange__position">
-                        <button class="currency-exchange__button">
+                        <button class="currency-exchange__button js-exchangeButton">
                             <img src="images/icons/exchange.png" class="currency-exchange__exchange" alt="Zamiana">
                         </button>
                     </div>
                     <div class="currency-exchange__position currency-exchange__position--center-align">
-                        <p class="currency-exchange__current-rate"></p>
+                        <p class="currency-exchange__current-rate js-currentRate"></p>
                     </div>
                     <div class="currency-exchange__position currency-exchange__position--right-align">
                         <p></p>
                     </div>
                     <div class="currency-exchange__position">
-                        <select class="currency-exchange__currencies">
+                        <select class="currency-exchange__currencies js-secondCurrency">
                             <option value="EUR">EUR</option>
                             <option value="PLN">PLN</option>
                             <option value="USD">USD</option>
@@ -70,10 +70,10 @@
                     </div>
                     <div class="currency-exchange__position currency-exchange__position--right-align
                     currency-exchange__position--colspan">
-                        <input type="number" class="currency-exchange__value" readonly>
+                        <input type="number" class="currency-exchange__value js-result" readonly>
                     </div>
                 </div>
-                <button type="submit" class="currency-exchange__submit">Wymień</button>
+                <button type="submit" class="currency-exchange__submit js-convertButton">Wymień</button>
             </form>
         </div>
         <article class="currency-exchange__exchanges">
