@@ -5,3 +5,11 @@ let currentRate = document.querySelector(".js-currentRate");
 let secondCurrency = document.querySelector(".js-secondCurrency");
 let result = document.querySelector(".js-result");
 let convertButton = document.querySelector(".js-convertButton");
+
+exchangeButton.addEventListener("click", () => {
+    oneValue = amount.value;
+    twoValue = result.value;
+
+    amount.value = twoValue;
+    result.value = oneValue;
+});
