@@ -6,6 +6,17 @@ let secondCurrency = document.querySelector(".js-secondCurrency");
 let result = document.querySelector(".js-result");
 let convertButton = document.querySelector(".js-convertButton");
 
+firstCurrency.addEventListener("input", () => {
+    switch (firstCurrency.value) {
+        case "PLN":
+            break;
+        case "EUR":
+            break;
+        case "USD":
+            break;
+    }
+});
+
 exchangeButton.addEventListener("click", () => {
     oneValue = amount.value;
     twoValue = result.value;
