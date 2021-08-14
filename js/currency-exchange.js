@@ -17,6 +17,17 @@ firstCurrency.addEventListener("input", () => {
     }
 });
 
+secondCurrency.addEventListener("input", () => {
+    switch (secondCurrency.value) {
+        case "EUR":
+            break;
+        case "PLN":
+            break;
+        case "USD":
+            break;
+    }
+});
+
 exchangeButton.addEventListener("click", () => {
     oneValue = amount.value;
     twoValue = result.value;
