@@ -89,3 +89,8 @@
 .currency-exchange__submit:hover {
     background: rgb(170, 218, 170);
 }
+.currency-exchange__exchanges {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
