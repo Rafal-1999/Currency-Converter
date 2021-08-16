@@ -6,6 +6,8 @@ let secondCurrency = document.querySelector(".js-secondCurrency");
 let result = document.querySelector(".js-result");
 let convertButton = document.querySelector(".js-convertButton");
 
+let firstCurrencyValue = 0;
+let secondCurrencyValue = 0;
 firstCurrency.addEventListener("input", () => {
     let firstCurrencyValue = 0;
     switch (firstCurrency.value) {
@@ -22,6 +24,12 @@ firstCurrency.addEventListener("input", () => {
 });
 
 amount.focus();
+
+if ((firstCurrency.value == firstCurrency.value) && (secondCurrency.value == secondCurrency.value)) {
+    currentRate.innerText = `1 ${firstCurrency.value} = ${secondCurrencyValue}`;
+} else {
+    currentRate.innerText = ``;
+}
 
 secondCurrency.addEventListener("input", () => {
     switch (secondCurrency.value) {

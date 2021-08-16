@@ -76,6 +76,10 @@
     background: none;
     border: none;
 }
+.currency-exchange__current-rate {
+    margin: 0;
+    font-size: 18px;
+}
 .currency-exchange__submit {
     width: 80%;
     background: rgb(50, 200, 50);
