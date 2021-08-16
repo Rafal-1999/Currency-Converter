@@ -17,6 +17,8 @@ firstCurrency.addEventListener("input", () => {
     }
 });
 
+amount.focus();
+
 secondCurrency.addEventListener("input", () => {
     switch (secondCurrency.value) {
         case "EUR":
