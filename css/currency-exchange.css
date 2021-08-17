@@ -104,3 +104,9 @@
     background: #CCC;
     margin: 0;
 }
+.currency-exchange__last-exchanges {
+    min-height: 400px;
+    max-height: 400px;
+    padding-left: 20px;
+    overflow: auto;
+}
