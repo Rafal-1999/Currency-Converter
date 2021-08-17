@@ -5,6 +5,7 @@ let currentRate = document.querySelector(".js-currentRate");
 let secondCurrency = document.querySelector(".js-secondCurrency");
 let result = document.querySelector(".js-result");
 let convertButton = document.querySelector(".js-convertButton");
+let lastExchanges = document.querySelector(".js-lastExchanges");
 
 let firstCurrencyValue = 0;
 let secondCurrencyValue = 0;
@@ -58,4 +59,8 @@ convertButton.addEventListener("click", (event) => {
 
     worthOne = amount.value / secondCurrencyValue;
     result.value = worthOne.toFixed(2);
+
+    let newExchange = document.createElement("p");
+    newExchange.innerHTML = `<b>${result.value} ${secondCurrency.value}</b>`;
+    lastExchanges.appendChild(newExchange);
 });
