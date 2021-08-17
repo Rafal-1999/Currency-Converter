@@ -97,4 +97,10 @@
     max-width: 500px;
     margin: 0 auto;
     margin-top: 50px;
+    border: 5px solid rgb(50, 200, 50);
+}
+.currency-exchange__article-title {
+    padding: 20px 15px;
+    background: #CCC;
+    margin: 0;
 }
