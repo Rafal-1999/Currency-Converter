@@ -10,7 +10,6 @@ let lastExchanges = document.querySelector(".js-lastExchanges");
 let firstCurrencyValue = 0;
 let secondCurrencyValue = 0;
 firstCurrency.addEventListener("input", () => {
-    let firstCurrencyValue = 0;
     switch (firstCurrency.value) {
         case "PLN":
             firstCurrencyValue = 0;
