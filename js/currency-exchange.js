@@ -21,15 +21,12 @@ firstCurrency.addEventListener("input", () => {
             firstCurrencyValue = 0;
             break;
     }
+    if (firstCurrency.value !== secondCurrency.value) {
+        currentRate.innerText = `1 ${firstCurrency.value} = ${secondCurrencyValue}`;
+    } else {
+        currentRate.innerText = ``;
+    }
 });
-
-amount.focus();
-
-if ((firstCurrency.value == firstCurrency.value) && (secondCurrency.value == secondCurrency.value)) {
-    currentRate.innerText = `1 ${firstCurrency.value} = ${secondCurrencyValue}`;
-} else {
-    currentRate.innerText = ``;
-}
 
 secondCurrency.addEventListener("input", () => {
     switch (secondCurrency.value) {
@@ -42,6 +39,11 @@ secondCurrency.addEventListener("input", () => {
         case "USD":
             secondCurrencyValue = 3.87;
             break;
+    }
+    if (firstCurrency.value !== secondCurrency.value) {
+        currentRate.innerText = `1 ${firstCurrency.value} = ${secondCurrencyValue}`;
+    } else {
+        currentRate.innerText = ``;
     }
 });
 
