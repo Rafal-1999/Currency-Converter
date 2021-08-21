@@ -7,8 +7,8 @@ let result = document.querySelector(".js-result");
 let convertButton = document.querySelector(".js-convertButton");
 let lastExchanges = document.querySelector(".js-lastExchanges");
 
-let firstCurrencyValue = 0;
-let secondCurrencyValue = 0;
+let firstCurrencyValue = 1;
+let secondCurrencyValue = 4.57;
 firstCurrency.addEventListener("input", () => {
     switch (firstCurrency.value) {
         case "PLN":
