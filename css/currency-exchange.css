@@ -26,7 +26,7 @@
 .currency-exchange__user-interface {
     height: 214px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     align-content: space-between;
 }
 .currency-exchange__position {
