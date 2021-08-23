@@ -26,7 +26,7 @@
 .currency-exchange__user-interface {
     height: 214px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: minmax(88px, 1fr) 2fr minmax(50px, 1fr);
     align-content: space-between;
 }
 .currency-exchange__position {
@@ -60,7 +60,6 @@
     font-size: 0;
 }
 .currency-exchange__currencies {
-    max-width: 70%;
     font-size: 25px;
     padding: 10px 15px;
     padding-left: 0;
