@@ -51,6 +51,9 @@
     font-size: 0;
     cursor: pointer;
 }
+.currency-exchange__icon {
+    width: 24px;
+}
 .currency-exchange__caption {
     font-size: 20px;
     margin: 0;
