@@ -107,8 +107,9 @@
     margin: 0;
 }
 .currency-exchange__last-exchanges {
-    min-height: 400px;
-    max-height: 400px;
+    min-height: 350px;
+    max-height: 350px;
+    background: rgba(250, 250, 250, 0.8);
     padding-left: 20px;
     overflow: auto;
 }
