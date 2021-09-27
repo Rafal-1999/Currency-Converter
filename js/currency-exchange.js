@@ -75,6 +75,5 @@
         newExchange.innerHTML = `<b>${result.value} ${secondCurrency.value}</b>`;
         lastExchanges.appendChild(newExchange);
     });
-
     init();
 }
