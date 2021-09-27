@@ -1,15 +1,15 @@
 {
-    let firstCurrency = document.querySelector(".js-firstCurrency");
-    let amount = document.querySelector(".js-amount");
-    let exchangeButton = document.querySelector(".js-exchangeButton");
-    let currentRate = document.querySelector(".js-currentRate");
-    let secondCurrency = document.querySelector(".js-secondCurrency");
-    let result = document.querySelector(".js-result");
-    let convertButton = document.querySelector(".js-convertButton");
-    let lastExchanges = document.querySelector(".js-lastExchanges");
+    const firstCurrency = document.querySelector(".js-firstCurrency");
+    const amount = document.querySelector(".js-amount");
+    const exchangeButton = document.querySelector(".js-exchangeButton");
+    const currentRate = document.querySelector(".js-currentRate");
+    const secondCurrency = document.querySelector(".js-secondCurrency");
+    const result = document.querySelector(".js-result");
+    const convertButton = document.querySelector(".js-convertButton");
+    const lastExchanges = document.querySelector(".js-lastExchanges");
 
-    let firstCurrencyValue = 1;
-    let secondCurrencyValue = 4.57;
+    const firstCurrencyValue = 1;
+    const secondCurrencyValue = 4.57;
     firstCurrency.addEventListener("input", () => {
         switch (firstCurrency.value) {
             case "PLN":
@@ -64,7 +64,7 @@
         worthOne = amount.value / secondCurrencyValue;
         result.value = worthOne.toFixed(2);
 
-        let newExchange = document.createElement("p");
+        const newExchange = document.createElement("p");
         newExchange.innerHTML = `<b>${result.value} ${secondCurrency.value}</b>`;
         lastExchanges.appendChild(newExchange);
     });
