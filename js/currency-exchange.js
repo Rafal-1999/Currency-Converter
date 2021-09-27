@@ -1,6 +1,15 @@
 {
+    const welcome = () => {
+        console.log(`Witam wszystkich programistów!`);
+    };
+
+    const init = () => {
+        const amount = document.querySelector(".js-amount");
+        amount.focus();
+        welcome();
+    };
+
     const firstCurrency = document.querySelector(".js-firstCurrency");
-    const amount = document.querySelector(".js-amount");
     const exchangeButton = document.querySelector(".js-exchangeButton");
     const currentRate = document.querySelector(".js-currentRate");
     const secondCurrency = document.querySelector(".js-secondCurrency");
@@ -28,8 +37,6 @@
             currentRate.innerText = ``;
         }
     });
-
-    amount.focus();
 
     secondCurrency.addEventListener("input", () => {
         switch (secondCurrency.value) {
@@ -68,4 +75,6 @@
         newExchange.innerHTML = `<b>${result.value} ${secondCurrency.value}</b>`;
         lastExchanges.appendChild(newExchange);
     });
+
+    init();
 }
