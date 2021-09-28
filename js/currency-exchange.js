@@ -6,20 +6,12 @@
     const init = () => {
         const amount = document.querySelector(".js-amount");
         amount.focus();
+        firstCurrency.addEventListener("input", (selectFirstCurrency));
         welcome();
     };
 
-    const firstCurrency = document.querySelector(".js-firstCurrency");
-    const exchangeButton = document.querySelector(".js-exchangeButton");
-    const currentRate = document.querySelector(".js-currentRate");
-    const secondCurrency = document.querySelector(".js-secondCurrency");
-    const result = document.querySelector(".js-result");
-    const convertButton = document.querySelector(".js-convertButton");
-    const lastExchanges = document.querySelector(".js-lastExchanges");
-
-    const firstCurrencyValue = 1;
-    const secondCurrencyValue = 4.57;
-    firstCurrency.addEventListener("input", () => {
+    const selectFirstCurrency = () => {
+        let firstCurrencyValue = 1;
         switch (firstCurrency.value) {
             case "PLN":
                 firstCurrencyValue = 0;
@@ -31,12 +23,24 @@
                 firstCurrencyValue = 0;
                 break;
         }
+    }
+
+    const firstCurrency = document.querySelector(".js-firstCurrency");
+    const exchangeButton = document.querySelector(".js-exchangeButton");
+    const currentRate = document.querySelector(".js-currentRate");
+    const secondCurrency = document.querySelector(".js-secondCurrency");
+    const result = document.querySelector(".js-result");
+    const convertButton = document.querySelector(".js-convertButton");
+    const lastExchanges = document.querySelector(".js-lastExchanges");
+
+    const secondCurrencyValue = 4.57;
+
+        
         if (firstCurrency.value !== secondCurrency.value) {
             currentRate.innerText = `1 ${firstCurrency.value} = ${secondCurrencyValue}`;
         } else {
             currentRate.innerText = ``;
         }
-    });
 
     secondCurrency.addEventListener("input", () => {
         switch (secondCurrency.value) {
