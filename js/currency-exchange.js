@@ -10,6 +10,7 @@
         firstCurrency.addEventListener("input", (selectFirstCurrency));
         secondCurrency.addEventListener("input", (selectSecondCurrency));
         exchangeButton.addEventListener("click", (toggleValues));
+        convertButton.addEventListener("click", (calculateResult));
         welcome();
     };
 
@@ -26,7 +27,7 @@
                 firstCurrencyValue = 0;
                 break;
         }
-    }
+    };
 
     const selectSecondCurrency = () => {
         let secondCurrencyValue = 4.57;
@@ -41,7 +42,7 @@
                 secondCurrencyValue = 3.87;
                 break;
         }
-    }
+    };
 
     const toggleValues = (amount, result) => {
         oneValue = amount.value;
@@ -49,7 +50,14 @@
 
         amount.value = twoValue;
         result.value = oneValue;
-    }
+    };
+
+    const calculateResult = (event) => {
+        event.preventDefault();
+
+        worthOne = amount.value / secondCurrencyValue;
+        result.value = worthOne.toFixed(2);
+    };
 
     const firstCurrency = document.querySelector(".js-firstCurrency");
     const currentRate = document.querySelector(".js-currentRate");
@@ -70,15 +78,8 @@
             currentRate.innerText = ``;
         }
 
-    convertButton.addEventListener("click", (event) => {
-        event.preventDefault();
-
-        worthOne = amount.value / secondCurrencyValue;
-        result.value = worthOne.toFixed(2);
-
         const newExchange = document.createElement("p");
         newExchange.innerHTML = `<b>${result.value} ${secondCurrency.value}</b>`;
         lastExchanges.appendChild(newExchange);
-    });
     init();
 }
