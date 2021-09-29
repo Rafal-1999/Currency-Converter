@@ -5,9 +5,11 @@
 
     const init = () => {
         const amount = document.querySelector(".js-amount");
+        const exchangeButton = document.querySelector(".js-exchangeButton");
         amount.focus();
         firstCurrency.addEventListener("input", (selectFirstCurrency));
         secondCurrency.addEventListener("input", (selectSecondCurrency));
+        exchangeButton.addEventListener("click", (toggleValues));
         welcome();
     };
 
@@ -41,8 +43,15 @@
         }
     }
 
+    const toggleValues = (amount, result) => {
+        oneValue = amount.value;
+        twoValue = result.value;
+
+        amount.value = twoValue;
+        result.value = oneValue;
+    }
+
     const firstCurrency = document.querySelector(".js-firstCurrency");
-    const exchangeButton = document.querySelector(".js-exchangeButton");
     const currentRate = document.querySelector(".js-currentRate");
     const secondCurrency = document.querySelector(".js-secondCurrency");
     const result = document.querySelector(".js-result");
@@ -60,14 +69,6 @@
         } else {
             currentRate.innerText = ``;
         }
-
-    exchangeButton.addEventListener("click", () => {
-        oneValue = amount.value;
-        twoValue = result.value;
-
-        amount.value = twoValue;
-        result.value = oneValue;
-    });
 
     convertButton.addEventListener("click", (event) => {
         event.preventDefault();
