@@ -7,6 +7,7 @@
         const amount = document.querySelector(".js-amount");
         amount.focus();
         firstCurrency.addEventListener("input", (selectFirstCurrency));
+        secondCurrency.addEventListener("input", (selectSecondCurrency));
         welcome();
     };
 
@@ -25,24 +26,8 @@
         }
     }
 
-    const firstCurrency = document.querySelector(".js-firstCurrency");
-    const exchangeButton = document.querySelector(".js-exchangeButton");
-    const currentRate = document.querySelector(".js-currentRate");
-    const secondCurrency = document.querySelector(".js-secondCurrency");
-    const result = document.querySelector(".js-result");
-    const convertButton = document.querySelector(".js-convertButton");
-    const lastExchanges = document.querySelector(".js-lastExchanges");
-
-    const secondCurrencyValue = 4.57;
-
-        
-        if (firstCurrency.value !== secondCurrency.value) {
-            currentRate.innerText = `1 ${firstCurrency.value} = ${secondCurrencyValue}`;
-        } else {
-            currentRate.innerText = ``;
-        }
-
-    secondCurrency.addEventListener("input", () => {
+    const selectSecondCurrency = () => {
+        let secondCurrencyValue = 4.57;
         switch (secondCurrency.value) {
             case "EUR":
                 secondCurrencyValue = 4.57;
@@ -54,12 +39,27 @@
                 secondCurrencyValue = 3.87;
                 break;
         }
+    }
+
+    const firstCurrency = document.querySelector(".js-firstCurrency");
+    const exchangeButton = document.querySelector(".js-exchangeButton");
+    const currentRate = document.querySelector(".js-currentRate");
+    const secondCurrency = document.querySelector(".js-secondCurrency");
+    const result = document.querySelector(".js-result");
+    const convertButton = document.querySelector(".js-convertButton");
+    const lastExchanges = document.querySelector(".js-lastExchanges");
+        
         if (firstCurrency.value !== secondCurrency.value) {
             currentRate.innerText = `1 ${firstCurrency.value} = ${secondCurrencyValue}`;
         } else {
             currentRate.innerText = ``;
         }
-    });
+        
+        if (firstCurrency.value !== secondCurrency.value) {
+            currentRate.innerText = `1 ${firstCurrency.value} = ${secondCurrencyValue}`;
+        } else {
+            currentRate.innerText = ``;
+        }
 
     exchangeButton.addEventListener("click", () => {
         oneValue = amount.value;
