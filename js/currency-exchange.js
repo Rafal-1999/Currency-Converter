@@ -18,14 +18,11 @@
         let firstCurrencyValue = 1;
         switch (firstCurrency.value) {
             case "PLN":
-                firstCurrencyValue = 0;
-                break;
+                return firstCurrencyValue = 0;
             case "EUR":
-                firstCurrencyValue = 0;
-                break;
+                return firstCurrencyValue = 0;
             case "USD":
-                firstCurrencyValue = 0;
-                break;
+                return firstCurrencyValue = 0;
         }
         showCurrentCourse();
     };
@@ -34,14 +31,11 @@
         let secondCurrencyValue = 4.57;
         switch (secondCurrency.value) {
             case "EUR":
-                secondCurrencyValue = 4.57;
-                break;
+                return secondCurrencyValue = 4.57;
             case "PLN":
-                secondCurrencyValue = 1;
-                break;
+                return secondCurrencyValue = 1;
             case "USD":
-                secondCurrencyValue = 3.87;
-                break;
+                return secondCurrencyValue = 3.87;
         }
         showCurrentCourse(secondCurrencyValue);
     };
