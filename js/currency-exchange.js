@@ -4,6 +4,7 @@
     };
 
     const init = () => {
+        welcome();
         const firstCurrency = document.querySelector(".js-firstCurrency");
         const amount = document.querySelector(".js-amount");
         const exchangeButton = document.querySelector(".js-exchangeButton");
@@ -16,7 +17,6 @@
         secondCurrency.addEventListener("input", (selectSecondCurrency));
         exchangeButton.addEventListener("click", (toggleValues));
         convertButton.addEventListener("click", (calculateResult));
-        welcome();
     };
 
     const selectFirstCurrency = () => {
