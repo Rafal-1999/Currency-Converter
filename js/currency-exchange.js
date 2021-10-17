@@ -12,7 +12,6 @@
         const secondCurrency = document.querySelector(".js-secondCurrency");
         const result = document.querySelector(".js-result");
         const convertButton = document.querySelector(".js-convertButton");
-        amount.focus();
         firstCurrency.addEventListener("input", (selectFirstCurrency));
         secondCurrency.addEventListener("input", (selectSecondCurrency));
         exchangeButton.addEventListener("click", (toggleValues));
