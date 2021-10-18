@@ -12,13 +12,15 @@
         const secondCurrency = document.querySelector(".js-secondCurrency");
         const result = document.querySelector(".js-result");
         const convertButton = document.querySelector(".js-convertButton");
-        firstCurrency.addEventListener("input", (selectFirstCurrency));
+        firstCurrency.addEventListener("input", () => {
+            selectFirstCurrency(firstCurrency);
+        });
         secondCurrency.addEventListener("input", (selectSecondCurrency));
         exchangeButton.addEventListener("click", (toggleValues));
         convertButton.addEventListener("click", (calculateResult));
     };
 
-    const selectFirstCurrency = () => {
+    const selectFirstCurrency = (firstCurrency) => {
         let firstCurrencyValue = 1;
         switch (firstCurrency.value) {
             case "PLN":
