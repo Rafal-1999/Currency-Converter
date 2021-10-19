@@ -15,7 +15,9 @@
         firstCurrency.addEventListener("input", () => {
             selectFirstCurrency(firstCurrency);
         });
-        secondCurrency.addEventListener("input", (selectSecondCurrency));
+        secondCurrency.addEventListener("input", () => {
+            selectSecondCurrency(secondCurrency);
+        });
         exchangeButton.addEventListener("click", (toggleValues));
         convertButton.addEventListener("click", (calculateResult));
     };
@@ -33,7 +35,7 @@
         showCurrentCourse();
     };
 
-    const selectSecondCurrency = () => {
+    const selectSecondCurrency = (secondCurrency) => {
         let secondCurrencyValue = 4.57;
         switch (secondCurrency.value) {
             case "EUR":
