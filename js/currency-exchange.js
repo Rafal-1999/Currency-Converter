@@ -18,7 +18,9 @@
         secondCurrency.addEventListener("input", () => {
             selectSecondCurrency(secondCurrency);
         });
-        exchangeButton.addEventListener("click", (toggleValues));
+        exchangeButton.addEventListener("click", () => {
+            toggleValues(amount, result);
+        });
         convertButton.addEventListener("click", (calculateResult));
     };
 
