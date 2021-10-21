@@ -51,8 +51,8 @@
     };
 
     const toggleValues = (amount, result) => {
-        oneValue = amount.value;
-        twoValue = result.value;
+        const oneValue = amount.value;
+        const twoValue = result.value;
 
         amount.value = twoValue;
         result.value = oneValue;
