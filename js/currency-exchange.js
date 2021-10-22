@@ -21,7 +21,9 @@
         exchangeButton.addEventListener("click", () => {
             toggleValues(amount, result);
         });
-        convertButton.addEventListener("click", (calculateResult));
+        convertButton.addEventListener("click", () => {
+            calculateResult(amount, result);
+        });
     };
 
     const selectFirstCurrency = (firstCurrency) => {
@@ -66,7 +68,7 @@
         }
     };
 
-    const calculateResult = (event) => {
+    const calculateResult = (amount, result, secondCurrencyValue) => {
         event.preventDefault();
 
         worthOne = amount.value / secondCurrencyValue;
