@@ -3,7 +3,14 @@
     text-align: center;
     padding: 25px 0;
     text-transform: uppercase;
+    font-size: 18px;
 }
 .footer__copyright {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__text {
     margin: 0;
 }
