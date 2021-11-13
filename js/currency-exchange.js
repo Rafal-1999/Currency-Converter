@@ -21,7 +21,8 @@
         exchangeButton.addEventListener("click", () => {
             toggleValues(amount, result);
         });
-        convertButton.addEventListener("click", () => {
+        convertButton.addEventListener("click", (e) => {
+            e.preventDefault();
             calculateResult(amount, result);
         });
     };
@@ -50,6 +51,7 @@
                 return secondCurrencyValue = 3.87;
         }
         showCurrentCourse(secondCurrencyValue);
+        calculateResult(secondCurrencyValue);
     };
 
     const toggleValues = (amount, result) => {
@@ -69,9 +71,7 @@
     };
 
     const calculateResult = (amount, result, secondCurrencyValue) => {
-        event.preventDefault();
-
-        worthOne = amount.value / secondCurrencyValue;
+        const worthOne = amount.value / secondCurrencyValue;
         result.value = worthOne.toFixed(2);
         addResultToHistory();
     };
