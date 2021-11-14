@@ -23,7 +23,7 @@
         });
         convertButton.addEventListener("click", (e) => {
             e.preventDefault();
-            calculateResult(amount, result);
+            calculateResult(amount, result, selectSecondCurrency(secondCurrency));
         });
     };
 
@@ -51,7 +51,6 @@
                 return secondCurrencyValue = 3.87;
         }
         showCurrentCourse(secondCurrencyValue);
-        calculateResult(secondCurrencyValue);
     };
 
     const toggleValues = (amount, result) => {
