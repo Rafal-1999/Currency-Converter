@@ -24,6 +24,7 @@
         convertButton.addEventListener("click", (e) => {
             e.preventDefault();
             calculateResult(amount, result, selectSecondCurrency(secondCurrency));
+            addResultToHistory(result, secondCurrency);
         });
     };
 
@@ -72,10 +73,9 @@
     const calculateResult = (amount, result, secondCurrencyValue) => {
         const worthOne = amount.value / secondCurrencyValue;
         result.value = worthOne.toFixed(2);
-        addResultToHistory();
     };
 
-    const addResultToHistory = () => {
+    const addResultToHistory = (result, secondCurrency) => {
         const lastExchanges = document.querySelector(".js-lastExchanges");
         const newExchange = document.createElement("p");
         newExchange.innerHTML = `<b>${result.value} ${secondCurrency.value}</b>`;
