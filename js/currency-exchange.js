@@ -3,6 +3,21 @@
         console.log(`Witam wszystkich programistów!`);
     };
 
+    const currencies = [
+        { name: "PLN", value: 1.00 },
+        { name: "EUR", value: 4.69 },
+        { name: "USD", value: 4.45 },
+        { name: "HUF", value: 0.01 },
+        { name: "CZK", value: 0.19 },
+        { name: "GBP", value: 5.46 },
+        { name: "CAD", value: 3.25 },
+        { name: "BGN", value: 2.40 },
+        { name: "CHF", value: 4.76 },
+        { name: "DKK", value: 0.63 },
+        { name: "SEK", value: 0.42 },
+        { name: "NOK", value: 0.44 }
+    ];
+
     const init = () => {
         welcome();
         const firstCurrency = document.querySelector(".js-firstCurrency");
